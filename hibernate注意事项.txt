@@ -39,18 +39,3 @@
 </hibernate-configuration>  
 
 
-以下为示例  映射文件
- <?xml version="1.0" encoding="UTF-8"?>  
-<!DOCTYPE hibernate-mapping PUBLIC
-        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-        "dtd/hibernate-mapping-3.0.dtd">  <- 其中的dtd文件通常为网络文件，现改为本地文件！！！->
-        
-<hibernate-mapping package="com.test.hibernate">
-	<class name="Signon" table="signon">
-		<id name="username" type="string" column="username">
-		<generator class="assigned"></generator>
-		</id>
-		<property name="password" type="string" column="password"></property>
-	</class>
-</hibernate-mapping>
-
